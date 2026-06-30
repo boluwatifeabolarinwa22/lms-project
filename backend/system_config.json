@@ -1,0 +1,6 @@
+{
+  "systemName": "Academic LMS Portal",
+  "allowRegistration": true,
+  "riskThresholdDays": 5,
+  "minPassingScore": 45
+}
