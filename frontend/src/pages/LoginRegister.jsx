@@ -20,7 +20,7 @@ export default function LoginRegister({ onLogin }) {
     const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
     
     try {
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      const response = await fetch(`https://lms-project-production-8566.up.railway.app${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

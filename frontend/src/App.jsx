@@ -95,7 +95,7 @@ export default function App() {
       };
       if (body) options.body = JSON.stringify(body);
       
-      const res = await fetch(`http://localhost:5000${endpoint}`, options);
+      const res = await fetch(`https://lms-project-production-8566.up.railway.app${endpoint}`, options);
       const data = await res.json();
       
       if (!res.ok) throw new Error(data.error || 'API Error');
