@@ -5,8 +5,9 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "npx prisma migrate deploy && node src/server.js",
     "dev": "nodemon src/server.js",
+    "db:migrate": "npx prisma migrate dev",
     "db:push": "npx prisma db push",
     "db:seed": "node src/seed.js",
     "db:studio": "npx prisma studio",
