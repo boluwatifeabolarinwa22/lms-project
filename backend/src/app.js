@@ -45,6 +45,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('LMS Analytics Backend is running');
+});
 // Public Auth Routes
 app.post('/api/auth/register', register);
 app.post('/api/auth/login', login);
